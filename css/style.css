@@ -5,10 +5,20 @@
     box-sizing: border-box;
 }
 img{
-    width: 100%;
+   max-width: 100%;
+   height: auto;
+    
 }
 
 /* COMMON */
+h4{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+p{
+    font-size: .5rem;
+    line-height: 15px;
+}
 :root{
     --primary-color:#255EE9;
     --secondary-color:#292841;
@@ -25,11 +35,39 @@ img{
 body{
     font-family:Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif; ;
 }
+/* BUTTONS */
+.bt-shape{
+    border-radius: 90px;
+    text-align: center;
+    padding: 5px;
+}
 
-/* HEADER */
-.h-logo img{
+.bt-small{
+    font-size: .3rem;
+}
+
+.bt-big{
+    font-size: 0.5rem;
+}
+.bt-white{
+    background-color: #ffffff;
+    color: black;
+}
+.bt-dark{
+    background-color: #23272A;
+    color: white;
 
 }
+.bt-blue{
+    background-color: #7289DA;
+    color: white;
+}
+.j-button {
+    display: flex;
+    padding: 10px;
+}
+/* HEADER */
+
 
 .header-nav{
     background-color: var(--primary-color);
@@ -75,34 +113,50 @@ body{
 .action-button{
     /* width: 20%; */
     /* border-style:dashed solid; */
-    font-size: .3rem;
-    background-color: white;
-    color: black;
-    border-radius: 90px;
-    text-align: center;
-    padding: 5px;
+    
+    
+    
 
 }
+/* JUMBOTRON */
 
 .main-header{
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     background-color: #23272A;
+   background-image: url(../img/jumbo.png); 
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-size: 100%;
+   max-width: 100%;
+   height: auto;
+    
+     
 }    
 
 .header-text{
-    /* display: flex;
-    justify-content: center; */
-    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     min-height: 200px;
     width: 50%;
     margin: 0 auto;
-    background-color: antiquewhite;
-    border-style: dashed;
-
+    color: white;
+    font-size: .7rem;
+}
+.title{
+    padding: 20px;
 }
 
+.jumbotorn-button{
+    margin: 5px;
+    text-decoration: none;
+    font-size: .4rem;
+    padding: 5px;
+
+}
 /* MAIN */
 .main-section{
     display: flex;
@@ -110,18 +164,19 @@ body{
     padding: 40px;
 }
 .big-section{
-    min-height: 300px;
+    /* min-height: 300px; */
      width: 60%;
-     background-color: lightskyblue;
-     border-style: dashed;
+     /* background-color: lightskyblue;
+     border-style: dashed; */
 }
 .small-section{
-    min-height: 300px;
+    /* min-height: 300px; */
     width: 40%;
-    background-color: lightsalmon;
-    border-style: dashed;
+    /* background-color: lightsalmon;
+    border-style: dashed; */
 
 }
+
 .bk-gray{
     display: flex;
     justify-content: center;
