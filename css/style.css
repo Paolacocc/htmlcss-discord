@@ -4,71 +4,103 @@
     margin: 0;
     box-sizing: border-box;
 }
+img{
+    width: 100%;
+}
 
 /* COMMON */
+:root{
+    --primary-color:#255EE9;
+    --secondary-color:#292841;
+    --gray-bg-color:#F5F5F5;
+    --light-button-color:#7289DA;
+    --footer-color:#23272A;
+}
 .container{
     display: flex;
-   
     width: 80%;
     margin: 0 auto;
-   
+
+}
+body{
+    font-family:Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif; ;
 }
 
 /* HEADER */
+.h-logo img{
 
+}
 
 .header-nav{
-
-    /* DEBUG */
-    background-color: lightpink;
+    background-color: var(--primary-color);
 }
 
 .header-bar{
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    
     padding: 40px;
-    
+    color: white;
+
 }
 
 .h-logo{
     width: 20%;
-    border-style: dashed solid;
+    /* border-style: dashed solid; */
     padding: 10px;
-    background-color: bisque;
+    align-items: center;
+
 }
 
 .header-menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     width: 60%;
-    border-style: dashed solid;
-    padding: 10px 50px;
+    color: inherit;
+    text-decoration: none;
+    /* border-style: dashed solid; */
+    /* padding: 10px ; */
     overflow: auto;
-    background-color: bisque;
-}
 
-.header-action{
-    width: 20%;
-    border-style:dashed solid;
-    background-color: bisque;
-    text-align: right;
-    padding: 10px;
+}
+.header-menu a {
+    color: inherit;
+    text-decoration: none;
+    font-size: .4rem;
+    padding: 5px;
     
+
+} 
+
+.action-button{
+    /* width: 20%; */
+    /* border-style:dashed solid; */
+    font-size: .3rem;
+    background-color: white;
+    color: black;
+    border-radius: 90px;
+    text-align: center;
+    padding: 5px;
+
 }
 
 .main-header{
-    background-color: aquamarine;
-    padding: 40px;
-}
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     background-color: #23272A;
+}    
+
 .header-text{
+    /* display: flex;
+    justify-content: center; */
+    align-self: flex-start;
     min-height: 200px;
     width: 50%;
     margin: 0 auto;
     background-color: antiquewhite;
     border-style: dashed;
-    
+
 }
 
 /* MAIN */
@@ -129,8 +161,8 @@
     border-style: dashed;
 }
 .footer-bar{
-   
-    
+
+
     border-top: 1px white;
     padding: 40px;
 }
@@ -143,12 +175,12 @@
     border-style: dashed;
     padding: 5px;
     background-color: lightpink;
-} 
+}
 .footer-nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: antiquewhite;
     padding: 10px 0;
-   
+
 }
